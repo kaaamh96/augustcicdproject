@@ -6,4 +6,4 @@ def test_homepage():
     response = client.get('/')
 
     assert response.status_code == 200
-    assert b'Hello, World! this application was deployed using CI/CD.' in response.data
+    assert b'Hello, World! This application was deployed using CI/CD.' in response.data
